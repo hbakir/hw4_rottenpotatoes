@@ -22,6 +22,11 @@ module NavigationHelpers
     #   when /^(.*)'s profile page$/i
     #     user_profile_path(User.find_by_login($1))
 
+    # Adding a path to the edit movie page
+    when /^the edit page for "(.*)"$/
+      movie = Movie.where("title = ?", $1).first
+      edit_movie_path(:id => movie.id)
+
     else
       begin
         page_name =~ /^the (.*) page$/
