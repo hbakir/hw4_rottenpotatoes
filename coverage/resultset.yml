@@ -19,8 +19,8 @@ Cucumber Features:
     - 1
     - !!null 
     - 1
-    - 0
-    - 0
+    - 1
+    - 1
     - !!null 
     - !!null 
     - !!null 
@@ -69,10 +69,10 @@ Cucumber Features:
     - !!null 
     - !!null 
     - 1
-    - 0
-    - 0
-    - 0
-    - 0
+    - 1
+    - 1
+    - 1
+    - 1
     - !!null 
     - !!null 
     - 1
@@ -89,4 +89,4 @@ Cucumber Features:
     - 0
     - !!null 
     - !!null 
-  :created_at: 2012-11-03 12:19:03.572065000 +01:00
+  :created_at: 2012-11-03 15:46:37.697956000 +01:00
