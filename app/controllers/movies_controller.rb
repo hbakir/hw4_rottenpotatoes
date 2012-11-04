@@ -2,7 +2,12 @@ class MoviesController < ApplicationController
 
   def similar
     @source = Movie.find(params[:id])
-    @movies = Movie.find_similar(@source.director)
+    if @source.director and @source.director.empty? == false
+      @movies = Movie.find_similar(@source.director)
+    else
+      flash[:notice] = "'#{@source.title}' has no director info."
+      redirect_to root_path
+    end
   end
 
   def show

@@ -9,3 +9,4 @@ Then /^the director of "([^"]*)" should be "([^"]*)"$/ do |title, director|
   movie = Movie.where("title = ?", title).first
   movie.director == director
 end
+

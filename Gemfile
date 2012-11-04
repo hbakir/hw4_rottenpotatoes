@@ -9,6 +9,7 @@ group :test do
   gem 'cucumber-rails'
   gem 'rspec-rails'
   gem 'ZenTest'
+  gem 'factory_girl_rails'
 end
 
 # for Heroku deployment - as described in Ap. A of ELLS book
