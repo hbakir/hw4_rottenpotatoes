@@ -7,6 +7,8 @@ gem 'rails', '3.1.0'
 
 group :test do
   gem 'cucumber-rails'
+  gem 'rspec-rails'
+  gem 'ZenTest'
 end
 
 # for Heroku deployment - as described in Ap. A of ELLS book
@@ -17,7 +19,6 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'capybara'
   gem 'launchy'
-  gem 'rspec-rails'
   gem 'simplecov'
 end
 group :production do

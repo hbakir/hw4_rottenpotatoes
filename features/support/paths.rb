@@ -22,7 +22,7 @@ module NavigationHelpers
     #   when /^(.*)'s profile page$/i
     #     user_profile_path(User.find_by_login($1))
 
-    # Adding a path to the datails for movie page
+    # Adding a path to the details for movie page
     when /^the details page for "(.*)"$/
       movie = Movie.where("title = ?", $1).first
       movie_path(:id => movie.id)
@@ -31,6 +31,11 @@ module NavigationHelpers
     when /^the edit page for "(.*)"$/
       movie = Movie.where("title = ?", $1).first
       edit_movie_path(:id => movie.id)
+    
+    # Adding a path to the similar movies page
+    when /^the Similar Movies page for "(.*)"$/
+      movie = Movie.where("title = ?", $1).first
+      similar_movie_path(:id => movie.id)
 
     else
       begin

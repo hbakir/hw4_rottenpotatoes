@@ -1,9 +1,8 @@
 class MoviesController < ApplicationController
 
   def similar
-    puts "=> similar was called with param id = " + params[:id]
     @source = Movie.find(params[:id])
-    @movies = []
+    @movies = Movie.find_similar(@source.director)
   end
 
   def show
