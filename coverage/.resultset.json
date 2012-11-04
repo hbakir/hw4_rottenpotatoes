@@ -38,24 +38,24 @@
         null,
         null,
         1,
-        0,
-        0,
+        5,
+        5,
         null,
-        0,
+        1,
         null,
-        0,
+        1,
         null,
-        0,
-        0,
+        5,
+        5,
         null,
-        0,
-        0,
+        5,
+        24,
         null,
         null,
-        0,
-        0,
-        0,
-        0,
+        5,
+        5,
+        5,
+        5,
         null,
         null,
         0,
@@ -100,7 +100,7 @@
       "/Users/hicham/cs169.1x/hw4_rottenpotatoes/app/models/movie.rb": [
         1,
         1,
-        0,
+        5,
         null,
         null,
         1,
@@ -109,7 +109,7 @@
         null
       ]
     },
-    "timestamp": 1352057138
+    "timestamp": 1352059572
   },
   "Cucumber Features": {
     "coverage": {
@@ -221,6 +221,6 @@
         null
       ]
     },
-    "timestamp": 1352057170
+    "timestamp": 1352059616
   }
 }

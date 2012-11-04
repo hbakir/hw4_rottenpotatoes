@@ -1,6 +1,28 @@
 require 'spec_helper'
 
 describe MoviesController do
+  describe 'sort movies' do
+    it 'should support sort by title' do
+      get :index, {:sort => 'title'}
+    end
+    it 'should support sort by release_date' do 
+      get :index, {:sort => 'release_date'}
+    end
+    it 'should update session with sorting' do
+      get :index, {:sort => 'bob'}
+      session[:sort].should be == 'bob'
+    end
+  end
+  describe 'filter movies' do
+    it 'should make filtered movies avaiable to the template' do
+      get :index, {:sort => 'bob'}
+      session[:sort] = 'bob'
+    end
+    it 'should select all ratings if no ratings is provided' do
+      get :index, {:sort => 'bob', :ratings => "PG"}
+      session[:ratings] = {}
+    end
+  end
   describe 'show details' do
     it 'should select the details template for rendering' do
       # prepare test
